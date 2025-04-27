@@ -17,7 +17,7 @@ STATIC_DIR = os.path.join(ROOT_DIR, 'static')
 TMP_DIR = os.path.join(STATIC_DIR, 'tmp')
 RULE_DIR = os.path.join(STATIC_DIR, 'rules')
 
-
+#
 os.environ['MODELSCOPE_CACHE'] = '/models'
 # os.environ['MODELSCOPE_CACHE'] = '/Users/sunshanming/localHub'
 
