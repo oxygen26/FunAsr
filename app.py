@@ -34,7 +34,7 @@ model = AutoModel(
     model="iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch",
     vad_model="iic/speech_fsmn_vad_zh-cn-16k-common-pytorch",
     punc_model="iic/punc_ct-transformer_zh-cn-common-vocab272727-pytorch",
-    device='gpu'
+    device='cpu'
 )
 
 r = os.getenv('RULE', 'on')
