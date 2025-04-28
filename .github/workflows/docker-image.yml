@@ -35,11 +35,11 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
-        image: yaming116/fun-asr
+        image: oxygen26/fun-asr
         labels: |-
           org.opencontainers.image.source=https://github.com/${{ github.repository }}
         tags: ${{ steps.t1.outputs.year }}-${{ steps.t1.outputs.month }}-${{ steps.t1.outputs.day }}, latest
-        registry: docker.io
+        registry: docker.io #1ms.run
         dockerfile: Dockerfile
         multiPlatform: true
         platform: linux/amd64,linux/arm64
